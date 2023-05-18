@@ -1,0 +1,22 @@
+#container {
+    width: 700px;
+    margin: 0 auto; 
+}
+
+#grids {
+    display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      grid-template-rows: repeat(16, 1fr);
+      gap: 1px; 
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+.cell:hover {
+    background-color: black;
+}
